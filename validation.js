@@ -1,18 +1,18 @@
-function myfunction(){
+function validateForm(){
     console.log("it works");
     var email =  document.getElementById("email").value;
     var name = document.getElementById("name").value;
-    if (checkName(name)){
-        alert("name is correct " + name);
-    }else {
-        alert("name is incorrect " + name);
+
+    if (!checkEmail(email)){
+        alert("email is incorrect" + email);
+        
     }
-    
-    if (checkEmail(email)){
-       alert("email is correct");
+    else if (!checkName(name)){
+        alert("Name " + name + " is incorrect. Name should have capital letter at beginnig, no numbers allowed.");
     }
+
     else {
-        alert("email is incorrect");
+        alert("Message has been send sucessfully");
     }
     
 }
@@ -22,7 +22,7 @@ function checkName(name){
     return nameReg.test(name);
 }
 
-function checkEmail(emial){
+function checkEmail(email){
     let emaiReg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
     return emaiReg.test(email);
 }
@@ -36,11 +36,7 @@ function setStartCon(){
 function checkIsFilled(){
     var email =  document.getElementById("email").value;
     var name = document.getElementById("name").value;
-    console.log("checking");
-    console.log(email);
-    console.log(name);
-    console.log(name.length);
-
+    
     if(name.length > 0 && email.length >0){
         console.log("condition true");
         document.getElementById("submitBut").disabled = false;
