@@ -51,7 +51,7 @@
     vertical-align: middle;
     height: 100%;
     color: white;
-    font-family: garamond;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: bold;
 
@@ -78,7 +78,7 @@ html, body {
     display: block;
     margin-left: 200px;
     margin-right: 200px; 
-    font-family: garamond;
+    font-family: 'Lato', sans-serif;
 }
 
 #footer{
@@ -109,7 +109,7 @@ html, body {
 #content h1{
     text-align: left;
     margin-bottom: 10px;
-    font-family: garamond;
+    font-family: 'Lato', sans-serif;
     color:black;
     font-size: 50px;
 }
@@ -117,7 +117,7 @@ html, body {
 
 .p-welcome{
     color:black;
-    font-family: garamond;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     margin-bottom: 5px;
 }
