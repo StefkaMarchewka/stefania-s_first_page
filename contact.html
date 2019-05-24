@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stefania's Page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <div class="header">
+            <div class="inner_header">
+                <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </div>
+           
+        </div>
+        <div id="content">
+            <div id="main">
+                <div class="contact_background">
+                    
+                    <div class="contact_form">
+                        <h3>Contact with me</h3>
+                        <h2>Write a message</h2>
+                        <form>
+                            <p>Name:</p>
+                            <p><input id="name" name="name" value="Enter your name"></p>
+                
+                            <p>Email adress:</p>
+                            <p><input id="email" name="email" value="Give your email"></p>
+                    
+                            <p>Message: </p>
+                            <p><textarea id="comment" rows="10" cols="50" name="comments">Write short message to me</textarea></p>
+                    
+                            <p><input type="submit" value="SEND" onclick="myfunction()"></p>
+                        </form>
+
+                        <script>
+                        function myfunction(){
+                            console.log("it works");
+                            var email =  document.getElementById("email").getAttribute("name");
+                            alert(email);
+                        }
+                        </script>
+        
+                    </div>
+                </div>
+                <h2>Or use email adress</h2>
+            <p>Stefania.Hrycyk@gmail.com</p>
+            <p><a href="https://www.linkedin.com/in/stefania-hrycyk-kubat-54a41778/">See me on LinkedIn</a></p>
+            </div>
+            
+        </div>
+       
+
+        
+
+        <footer id="footer">
+                <div class="inner_footer">
+                    <p class="footerInfo">FOOTER CONTENT<br>  and more text<br>and something more</p>
+                </div>
+               
+            </footer>
+    </body>
+</html>
