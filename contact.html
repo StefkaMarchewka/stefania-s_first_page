@@ -33,19 +33,10 @@
                             <p><input id="email" name="email" value="Give your email"></p>
                     
                             <p>Message: </p>
-                            <p><textarea id="comment" rows="10" cols="50" name="comments">Write short message to me</textarea></p>
+                            <p><textarea id="comment" rows="10" cols="35" name="comments">Write short message to me</textarea></p>
                     
                             <p><input type="submit" value="SEND" onclick="myfunction()"></p>
                         </form>
-
-                        <script>
-                        function myfunction(){
-                            console.log("it works");
-                            var email =  document.getElementById("email").getAttribute("name");
-                            alert(email);
-                        }
-                        </script>
-        
                     </div>
                 </div>
                 <h2>Or use email adress</h2>
@@ -56,8 +47,6 @@
         </div>
        
 
-        
-
         <footer id="footer">
                 <div class="inner_footer">
                     <p class="footerInfo">FOOTER CONTENT<br>  and more text<br>and something more</p>
@@ -65,4 +54,5 @@
                
             </footer>
     </body>
+    <script src="validation.js"></script>
 </html>

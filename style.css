@@ -170,6 +170,10 @@ html, body {
     
 }
 
+.contact_form input {
+    width: 300px;
+}
+
 
 
 h3{
