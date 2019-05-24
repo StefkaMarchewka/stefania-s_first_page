@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
        
     </head>
-    <body>
+    <body onload="setStartCon()">
         <div class="header">
             <div class="inner_header">
                 <ul class="navigation">
@@ -27,24 +27,25 @@
                         <h2>Write a message</h2>
                         <form>
                             <p>Name:</p>
-                            <p><input id="name" name="name" value="Enter your name"></p>
+                            <p><input id="name" name="name" value="" onclick="clearNameForm()"></p>
                 
                             <p>Email adress:</p>
-                            <p><input id="email" name="email" value="Give your email"></p>
+                            <p><input id="email" name="email" value="" onclick="clearEmailForm()"></p>
                     
                             <p>Message: </p>
-                            <p><textarea id="comment" rows="10" cols="35" name="comments">Write short message to me</textarea></p>
+                            <p><textarea id="comment" rows="10" cols="35" onclick ="checkIsFilled()" name="comments">write short message to me</textarea></p>
                     
-                            <p><input type="submit" value="SEND" onclick="myfunction()"></p>
+                            <p><input id="submitBut" type="submit" value="SEND" onclick="myfunction()"></p>
                         </form>
                     </div>
                 </div>
                 <h2>Or use email adress</h2>
-            <p>Stefania.Hrycyk@gmail.com</p>
+            <p>stefania.hrycyk@gmail.com</p>
             <p><a href="https://www.linkedin.com/in/stefania-hrycyk-kubat-54a41778/">See me on LinkedIn</a></p>
             </div>
             
         </div>
+        
        
 
         <footer id="footer">
