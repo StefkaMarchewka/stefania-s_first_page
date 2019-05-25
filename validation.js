@@ -1,10 +1,9 @@
 function validateForm(){
-    console.log("it works");
     var email =  document.getElementById("email").value;
     var name = document.getElementById("name").value;
 
     if (!checkEmail(email)){
-        alert("email is incorrect" + email);
+        alert("email: " + email + "  is incorrect");
         
     }
     else if (!checkName(name)){
@@ -29,25 +28,17 @@ function checkEmail(email){
 
 function setStartCon(){
     document.getElementById("submitBut").disabled = true;
-    document.getElementById("name").value = "Enter your name";
-    document.getElementById("email").value = "Enter your email";
 }
 
 function checkIsFilled(){
     var email =  document.getElementById("email").value;
     var name = document.getElementById("name").value;
+    var message = document.getElementById("comment").value;
+
     
-    if(name.length > 0 && email.length >0){
-        console.log("condition true");
+    if(name.length > 0 && email.length >0 && message.length >0){
         document.getElementById("submitBut").disabled = false;
     }
 
 }
 
-function clearNameForm(){
-    document.getElementById("name").value = "";
-}
-
-function clearEmailForm(){
-    document.getElementById("email").value = "";
-}

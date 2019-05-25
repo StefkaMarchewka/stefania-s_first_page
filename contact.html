@@ -27,13 +27,14 @@
                         <h2>Write a message</h2>
                         <form>
                             <p>Name:</p>
-                            <p><input id="name" name="name" value="" onclick="clearNameForm()"></p>
+                           
+                            <p><input id="name" value="" placeholder="f.ex John Snow" onclick="checkIsFilled()"></p>
                 
                             <p>Email adress:</p>
-                            <p><input id="email" name="email" value="" onclick="clearEmailForm()"></p>
+                            <p><input id="email" value="" placeholder="f.ex johnsnow@mail.com" onclick="checkIsFilled()"></p>
                     
                             <p>Message: </p>
-                            <p><textarea id="comment" rows="10" cols="35" onclick ="checkIsFilled()" name="comments">write short message to me</textarea></p>
+                            <p><textarea id="comment" rows="10" cols="35" onclick ="checkIsFilled()" placeholder="Write something nice to me"></textarea></p>
                     
                             <p><input id="submitBut" type="submit" value="SEND" onclick="validateForm()"></p>
                         </form>
@@ -45,12 +46,18 @@
             </div>
             
         </div>
-        
-       
 
         <footer id="footer">
-                <div class="inner_footer">
-                    <p class="footerInfo">FOOTER CONTENT<br>  and more text<br>and something more</p>
+                <div class="inner_footer"> 
+                    <table class="table">
+                        <tr>
+                            <td><a id="facebook" href="https://www.facebook.com/"> <img src="logo/icons8-facebook-48.png" alt=facebook></a></td>
+                            <td> FOOTER CONTENT <br>more info<br> and more info</td>
+                            <td> <a id="linkedIn" href="https://www.linkedin.com/in/stefania-hrycyk-kubat-54a41778/"><img src="logo/icons8-linkedin-circled-48.png" alt=linkedin> </a></td>
+                        </tr>
+            
+            
+                    </table>
                 </div>
                
             </footer>
